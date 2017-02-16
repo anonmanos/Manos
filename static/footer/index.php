@@ -1,10 +1,12 @@
   </div>
   <footer>
   <div class="container text-center">
-    <p class="pull-left">© <?=date("Y");?> Global Testing Network. All Rights Reserved</p>
+    <p class="pull-left">© <?=date("Y");?> manos. All Rights Reserved</p>
     <ul class="pull-right list-inline">
+      <!--
       <li><a href="https://github.com/sahat/hackathon-starter">GitHub Project</a></li>
       <li><a href="https://github.com/sahat/hackathon-starter/issues">Issues</a></li>
+      -->
     </ul>
   </div>
   </footer>

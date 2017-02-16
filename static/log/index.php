@@ -12,7 +12,7 @@
   // mysql_query($sql) or die("error=$sql");
 ?>
 <?php
-$strFileName = $static.'/log/'.$log_today.'.loging';
+$strFileName = $static.'/log/'.$log_today.'.logs';
 $objFopen = fopen($strFileName, 'a');
 $strText1 = "$log_datetime  $log_ip  $log_hostname  $log_users  $log_title  $log_agent'\n";
 fwrite($objFopen, $strText1);
