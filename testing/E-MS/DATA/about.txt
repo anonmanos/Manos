@@ -1,0 +1,6 @@
+﻿ชื่อโครงการ : ระบบการจัดการเครื่องมือเพื่อพัฒนาบทเรียนออนไลน์ กรณีศึกษา:วิชาฟิสิกส์ 2<br />
+<p>
+	รายละเอียด :<br />
+	<br />
+	เครื่องมือพัฒนา : PHP Script Language Version 5.2.3, EditPlus Text Editer Version 3.12<br />
+	ฐานข้อมูล : MySQL Database Version 5.0, phpMyAdmin Database Manager Version 2.10.3</p>

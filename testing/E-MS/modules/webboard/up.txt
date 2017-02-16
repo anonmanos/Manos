@@ -1,0 +1,33 @@
+if($_FILES["picture"]["tmp_name"]){
+		ini_set("memory_limit","32M");
+		$filepath=$_FILES["picture"]["tmp_name"];
+		$filename=$_FILES["picture"]["name"];
+		$filetype=$_FILES["picture"]["type"];
+		$filesize=$_FILES["picture"]["size"];
+		if ( $filetype == "image/gif" ){
+			$Filename = TIMESTAMP.".gif";
+			$ori_img = @imagecreatefromgif($filepath);
+		}if ( $filetype == "image/png" ){
+			$Filename = TIMESTAMP.".png";
+			$ori_img = @imagecreatefrompng($filepath);
+		}elseif(($filetype=="image/jpg")||($filetype=="image/jpeg")||($filetype=="image/pjpeg")){
+			$Filename = TIMESTAMP.".jpg";
+			$ori_img = @imagecreatefromjpeg($filepath);
+		}
+		$ori_size = getimagesize($filepath);
+		$ori_w = $ori_size[0]; //ความกว้างของภาพ
+		$ori_h = $ori_size[1]; //ความสูงของภาพ
+		$new_w = _WEBBOARD_LIMIT_UPLOAD;
+		$new_h = round(($new_w/$ori_w) * $ori_h);
+		$new_img = imagecreatetruecolor($new_w, $new_h);
+		imagecopyresized($new_img, $ori_img,0,0,0,0,$new_w, $new_h,$ori_w, $ori_h);
+		if ( $filetype == "image/gif" ){
+			imagejgif($new_img,"webboard_up/".$Filename );
+		}if ( $filetype == "image/png" ){
+			imagejpeg($new_img,"webboard_up/".$Filename );
+		}elseif(($filetype=="image/jpg")||($filetype=="image/jpeg")||($filetype=="image/pjpeg")){
+			imagejpeg($new_img,"webboard_up/".$Filename );
+		}
+		imagedestroy($ori_img);
+		imagedestroy($new_img);
+	}

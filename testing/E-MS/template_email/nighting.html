@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title>{HEADDER}</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <style type="text/css">
+  #body{
+	padding: 4px;
+	width: 600px; height: 200px;
+	font-size: 15px;
+	font-family: tahoma; 
+	background:url({URL_MAIL}images/signup.gif) no-repeat;
+	/*background:url(images/signup.gif) no-repeat;*/
+ }
+.tx_box{
+	padding: 0 5px 0 5px;
+	border-right: #fff 1px none;
+	border-top: #fff 1px none;
+	border-left: #fff 1px none; 
+	border-bottom: #000 1px dotted; 
+	font-size: 10pt; 
+	color: #00f; 
+	font-weight: bold;
+	font-family: tahoma; 
+	background-color: none;
+}
+ </style>
+ </head>
+
+ <body>
+<pre id="body">
+<b>เรื่อง</b>&nbsp;แจ้งการคืนห้องพักระบบบริหารจัดการที่พักบุคลากรมหาวิทยาลัยราชภัฏอุตรดิตถ์
+<b>เรียน</b>&nbsp;{FULLNAME}
+<dd>เนื่องจากเจ้าหน้าที่ได้คืนห้องพัก&nbsp;อาคาร:<span class="tx_box">{BUILDING}</span>&nbsp;ชั้น:<span class="tx_box">{FLOOR}</span>
+ประเภทห้อง:<span class="tx_box">{TYPEROOM}</span>&nbsp;หมายเลขห้อง:<span class="tx_box">{ROOM}</span>
+วันที่เข้าพัก:<span class="tx_box">{DATEIN}</span>&nbsp;วันที่ย้ายออก:<span class="tx_box">{DATEOUT}</span>
+หลังจากนั้นวันที่ย้ายออกแล้วสมาชิกจะไม่สามารถใช้ชื่อเข้าใช้ระบบและรหัสผ่าน เข้าสู้ระบบ เพราะสมาชิกสิ้นสุดการเป็นสมาชิกแล้วฉะนั้นระบบ
+จะระงับการใช้งานของสมาชิกแต่ข้อมูลทุกอย่างไม่ทุกลบออกจากระบบ
+</dd>
+<!-- สิ่งที่ส่งมาด้วย
+{SERVICE} -->
+สมาชิกสามารถเข้าใช้งานและยืนยันการจองห้องพักในวันที่เข้าพัก<a href="{URL}" class="tx_box">คลิกที่นี้</a>
+
+<pre>
+ </body>
+</html>

@@ -1,0 +1,194 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 3.0 License
+
+Name       : Oceania
+Description: A two-column, fixed-width design with a bright color scheme.
+Version    : 1.0
+Released   : 20120208
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #1D68AB;
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+html {
+	background: #CFD5DE url(../images/img01.jpg) top left repeat-x;
+}
+
+body {
+	background: url(../images/img02.jpg) top center no-repeat;
+	line-height: 1.75em;
+	color: #6B7C93;
+}
+
+
+br.clearfix {
+	clear: both;
+}
+
+#content {
+	float: left;
+	padding: 5px;
+	width: 930px;
+	background: #EAEEF2 url(../images/img05.jpg) top left repeat-x;
+	border-radius: 10px;
+	border: solid 1px #FFFFFF;
+	text-shadow: 0 1px 0 #FFFFFF;
+	word-wrap: break-word;
+	break-word: break-all;
+	/*white-space: pre-wrap; /* css-3 */
+	/*white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+	/*white-space: -pre-wrap; /* Opera 4-6 */
+	/*white-space: -o-pre-wrap; /* Opera 7 */
+	/*word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+#footer {
+	margin: 50px 0 120px 0;
+	text-align: center;
+	color: #626E7F;
+	text-shadow: 0 1px 0 #FFFFFF;
+}
+
+#footer a {
+	color: #626E7F;
+}
+
+#header {
+	background: #2C84AF url(../images/img03.jpg) top left no-repeat;
+	color: #FFFFFF;
+	height: 140px;
+	position: relative;
+	padding: 20px;
+	border-radius: 10px;
+	border-top: solid 1px #96D0F7;
+	border-bottom: solid 1px #0C3459;
+}
+
+#logo {
+	top: 40px;
+	width: 220px;
+	height: 140px;
+	position: absolute;
+	left: 40px;
+	line-height: 140px;
+}
+
+#logo a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#logo h1,.h1 {
+	font-size: 2.8em;
+	text-shadow: 0 2px 2px #0E3E68;
+}
+
+#menu {
+	height: 62px;
+	right: 40px;
+	line-height: 62px;
+	top: 130px;
+	position: absolute;
+}
+
+#menu a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#menu ul {
+	padding: 0 25px 0 25px;
+	list-style: none;
+}
+
+#menu ul li {
+	padding: 5px 10px 5px 10px;
+	display: inline;
+	text-shadow: 0 1px 1px #0E3E68;
+}
+
+#menu ul li.current_page_item {
+	background: #56AFD8 url(../images/img04.jpg) top left no-repeat;
+	border-top: solid 1px #82D9ED;
+	border-bottom: solid 1px #24627C;
+	border-radius: 5px;
+}
+
+#page {
+	position: relative;
+	margin: 20px 0 20px 0;
+	padding: 0;
+	width: 1200px;
+}
+/*
+#page .section-list {
+	padding-left: 0;
+	list-style: none;
+}
+
+#page .section-list li {
+	clear: both;
+	padding: 25px 0 25px 0;
+}
+
+#page ul {
+	list-style: none;
+}
+
+#page ul li {
+	padding: 15px 0 15px 0;
+	border-top: dotted 1px #C5CDD8;
+}
+
+#page ul li.first {
+	padding-top: 0;
+	border-top: 0;
+}
+*/
+
+#sidebar {
+	background: #EAEEF2 url(../images/img05.jpg) top left repeat-x;
+	width: 243px;
+	margin: 0 0 0 945px;
+	padding: 5px;
+	border-radius: 10px;
+	border: solid 1px #FFFFFF;
+	text-shadow: 0 1px 0 #FFFFFF;
+}
+/*
+#sidebar ul {
+	list-style: none;
+}
+
+#sidebar ul li {
+	padding: 15px 0 15px 0;
+	border-top: dotted 1px #C5CDD8;
+}
+
+#sidebar ul li.first {
+	border-top: 0;
+	padding-top: 0;
+}
+*/
+#wrapper {
+	position: relative;
+	margin: 0 auto 0 auto;
+	padding: 75px 0 0 0;
+	width: 1200px;/*980*/
+}
+input{
+	height:28px;
+}

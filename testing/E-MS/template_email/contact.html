@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title>{HEADDER}</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <style type="text/css">
+  #body{
+	padding: 4px;
+	width: 600px; height: 200px;
+	font-size: 15px;
+	font-family: tahoma; 
+	background:url({URL_MAIL}images/signup.gif) no-repeat;
+	/*background:url(images/signup.gif) no-repeat;*/
+ }
+.tx_box{
+	padding: 0 5px 0 5px;
+	border-right: #fff 1px none;
+	border-top: #fff 1px none;
+	border-left: #fff 1px none; 
+	border-bottom: #000 1px dotted; 
+	font-size: 10pt; 
+	color: #00f; 
+	font-weight: bold;
+	font-family: tahoma; 
+	background-color: none;
+}
+ </style>
+ </head>
+
+ <body>
+<pre id="body">
+<b>เรื่อง</b>&nbsp;{SUBJECT}
+<b>เรียน</b>&nbsp;ผู้ที่เกี่ยวข้องใน{HEADDER}
+<b>ผู้ส่ง</b>&nbsp;{FULLNAME}
+เนื้อหา<br/>{CONTENT}
+<pre>
+ </body>
+</html>
